@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0; 
+    font-family: "open Sans";
+}
+.mt20{
+    margin-top: 20px;
+}
+
+.banner{
+    height: 80px;
+    background-color: #191919;
+    color: white;
+}
+
+.name_Cafe{
+    text-transform: uppercase;
+    width: fit-content;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.banner nav{ 
+    display: flex;
+    align-items: center;
+    margin: 0 250px;
+    height: 100%;
+    overflow: hidden;
+}
+.banner ul{ 
+    padding: 0px ;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+}
+.banner ul li a {
+    padding: 50px 25px;
+    text-align: center;
+    height: 100%;
+}
+.banner ul li a:hover{
+    background-color: rgba(255, 255, 255, 0.165);
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    width: fit-content;
+    margin-left: auto;
+    color: inherit;
+}
+.contact a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*Corps*/
+
+.expertise{
+    background: url(Images/cafe1.jpg) no-repeat center center;
+    background-size: cover;
+    height: 600px;
+}
+.expertise .content{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.expertise .title{
+    font-size: 48px;
+    padding-top: 100px;
+}
+
+.expertise hr{
+    width: 100px;
+    height: 6px;
+    background-color: black;
+    margin: 15px 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+}
+
+.expertise p{
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+}
+
+.btn{
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn_white:hover{
+    color: white;
+    transition: 0.4s;
+    background-color: black;
+}
+
+/***Info***/
+
+.info{
+    display: flex;
+    height: 500px;
+    max-width: 1000px;
+    margin: auto;
+}
+.info_feature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: black;
+    height: 100%;
+    width: 50%;
+}
+.info_feature p{
+    margin-top: 20px;
+    text-align: center;
+}
+.info_feature i {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 80px;
+    line-height: 1;
+}
+
+.img{
+    height: 400px;
+    background: url(Images/cafe3.jpg) center center;
+    background-size: cover;
+}
+
+.reservation{
+    text-align: center;
+    height: 300px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.reservation h2{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.btn_black{
+    background-color: black;
+    color: white;
+}
+.btn_black:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+footer{
+    background-color: #191919;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/***CSS de la page location***/
+
+.map{
+    height: 800px;
+}
+
+.map_info{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.map_info img{
+    height: 300px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+.location_info{
+    flex-direction: column;
+}
+.location_info hr{
+    margin: 10px 0 ;
+}
+.location_info h2{
+    display: flex;
+}
+
+.ligne_4{ 
+    background-color: #be418c;
+}
+.ligne_11{
+    background-color:#8c5e24 ;
+}
+.metro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin:0 5px;
+    font-size: 16px;
+}
+.location{
+    display: flex;
+    gap: 20px;
+}
+
+/***Page contact***/
+
+.form_content{
+    text-align: start;
+    margin: auto;
+    margin-top: 150px;
+    max-width: 600px;
+    height: 800px;
+}
+.form_content hr{
+    margin: 10px 0 25px 0;
+}
+.form_complet{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form_complet input{
+    height: 60px;
+}
+.form_complet textarea{
+    height: 120px;
+}
+
+.form_complet label{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media(max-width : 950px){
+    .banner{
+        height: fit-content;
+    }
+    .contact{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        gap: 0;
+    }
+    .banner nav{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+
+    }
+    .name_Cafe{
+        margin-top: 20px;
+    }
+    .banner ul{
+        flex-direction: column;
+    }
+    .banner ul li{
+        text-align: center;
+        width: 100%;
+        cursor: pointer;
+    }
+    .banner ul li a{
+        padding: 0;
+        padding: 10px 0;
+        display: block;
+    }
+    .expertise .content{
+        max-width: 80%;
+
+    }
+    .expertise .title{
+        font-size: 32px;
+        padding-top:50px ;
+    }
+
+    .info{
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        flex-direction: column;
+        height: fit-content;
+        margin-top: 50px ;
+        margin-bottom: 50px;
+        gap: 40px;
+        
+    }
+
+    .info_feature{
+        width: 100%;
+    }
+    .info h2{
+        font-weight: bold;
+    }
+
+    .reservation{
+        width: 90%;
+        margin-bottom: 50px;
+    }
+    .map{
+        height: 600px;
+    }
+    .map_info img{
+        width: 80%;
+        height: auto;
+    }
+    .location{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .location_info{
+        width: 90%;
+        margin-top: 25px;
+    }
+    .location_info h2{
+        font-size: 18px;
+        margin-top: 15px;
+        align-items: center;
+    }
+    .location_info p {
+        margin-top: 25px;
+    }
+    .metro{
+        margin: 0 5px;
+    }
+    .form {
+        width: 90%;
+        margin: auto;
+    }
+    .form_content{
+        margin-top: 50px;
+        height: 600px;
+    }
+}
